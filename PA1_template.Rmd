@@ -94,7 +94,7 @@ for (i in 1:length(activity$steps2)) {
 
 Tabulate the number of NAs in the new data.
 ```{r}
-table(is.na(activity$stepss))
+table(is.na(activity$steps2))
 ```
 
 All gone.

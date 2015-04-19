@@ -142,16 +142,13 @@ for (i in 1:length(activity$steps2)) {
 Tabulate the number of NAs in the new data.
 
 ```r
-table(is.na(activity$stepss))
+table(is.na(activity$steps2))
 ```
 
 ```
-## Warning in is.na(activity$stepss): is.na() applied to non-(list or vector)
-## of type 'NULL'
-```
-
-```
-## < table of extent 0 >
+## 
+## FALSE 
+## 17568
 ```
 
 All gone.

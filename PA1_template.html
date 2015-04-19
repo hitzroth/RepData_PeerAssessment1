@@ -143,10 +143,10 @@ for (i in 1:length(activity$steps2)) {
          activity$steps2[i] &lt;- activity$steps[i])
 }</code></pre>
 <p>Tabulate the number of NAs in the new data.</p>
-<pre class="r"><code>table(is.na(activity$stepss))</code></pre>
-<pre><code>## Warning in is.na(activity$stepss): is.na() applied to non-(list or vector)
-## of type 'NULL'</code></pre>
-<pre><code>## &lt; table of extent 0 &gt;</code></pre>
+<pre class="r"><code>table(is.na(activity$steps2))</code></pre>
+<pre><code>## 
+## FALSE 
+## 17568</code></pre>
 <p>All gone.</p>
 <p>Get the total steps per day.</p>
 <pre class="r"><code>total3 &lt;- activity %&gt;%
