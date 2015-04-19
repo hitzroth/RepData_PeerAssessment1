@@ -177,7 +177,7 @@ activity$day &lt;- factor(activity$day,
 <pre class="r"><code>total4 &lt;- activity %&gt;%
   group_by(decint, day) %&gt;%
   summarize(steps = mean(steps, na.rm = T))</code></pre>
-<p>Split the data into weekday and weekends.</p>
+<p>Split the data into weekdays and weekends.</p>
 <pre class="r"><code>total4 &lt;- total4 %&gt;% ungroup() %&gt;% transmute(decint = decint,
                                  day = day, steps = steps)
 total5 &lt;- total4 %&gt;% filter(day == &quot;weekday&quot;)

@@ -218,7 +218,7 @@ total4 <- activity %>%
   summarize(steps = mean(steps, na.rm = T))
 ```
 
-Split the data into weekday and weekends.
+Split the data into weekdays and weekends.
 
 ```r
 total4 <- total4 %>% ungroup() %>% transmute(decint = decint,
